@@ -15,7 +15,7 @@ public class DynamicControlsTest extends BaseTest{
         dynamicControlsPage.findTextEnabled();
         dynamicControlsPage.clickDisabledButton();
         dynamicControlsPage.findTextDisabled();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
 

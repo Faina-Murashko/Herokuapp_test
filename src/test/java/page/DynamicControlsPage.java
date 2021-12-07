@@ -13,6 +13,7 @@ public class DynamicControlsPage extends BasePage {
     public static final By FIND_TEXT_DISABLED = By.xpath("//p[@id='message']");
 
 
+
     public DynamicControlsPage(WebDriver driver) {
         super(driver);
 
@@ -21,12 +22,12 @@ public class DynamicControlsPage extends BasePage {
     public void open(){
         driver.get(URL + "dynamic_controls");
     }
+
     public void clickButtonRemove(){
         driver.findElement(REMOVE_BUTTON).click();
     }
-    public boolean[] findTextItsGone(){
+    public void findTextItsGone(){
         driver.findElement(FIND_TEXT).getText();
-        return new boolean[0];
     }
     public void clickEnabledButton(){
         driver.findElement(ENABLED_BUTTON).click();
