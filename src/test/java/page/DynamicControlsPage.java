@@ -24,8 +24,9 @@ public class DynamicControlsPage extends BasePage {
     public void clickButtonRemove(){
         driver.findElement(REMOVE_BUTTON).click();
     }
-    public void findTextItsGone(){
+    public boolean[] findTextItsGone(){
         driver.findElement(FIND_TEXT).getText();
+        return new boolean[0];
     }
     public void clickEnabledButton(){
         driver.findElement(ENABLED_BUTTON).click();
